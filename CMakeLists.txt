@@ -11,7 +11,8 @@ set(YEARS
     2023)
 
 set(2022
-    1.question
+    day1
+    day2
     )
 
 set(2023
