@@ -13,6 +13,7 @@ set(YEARS
 set(2022
     day1
     day2
+    day3
     )
 
 set(2023
