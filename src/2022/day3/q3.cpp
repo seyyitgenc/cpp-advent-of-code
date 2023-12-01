@@ -6,7 +6,8 @@
 #include <sstream>
 #include <set>
 
-#include <cstdio>
+#include "filesystem.h"
+
 // problem link : https://adventofcode.com/2022/day/3 
 
 void get_input(const std::string &path,std::vector<std::string>& data){
@@ -178,7 +179,7 @@ int p2_solve(std::vector<std::string> &data){
 
 int main(){
     std::vector<std::string> input;
-    get_input("C:/projects/cpp-advent-of-code/src/2022/day3/input.txt",input);
+    get_input(FileSystem::getPath("src/2022/day3/input.txt"),input);
 
     // std::cout << "Part 1 result : " << p1_solve(input) << std::endl;
     std::cout << "Part 2 result : " << p2_solve(input) << std::endl;

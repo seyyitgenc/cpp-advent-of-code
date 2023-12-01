@@ -89,10 +89,10 @@ int p2_solve(std::vector<std::string> &data){
 
 int main(){
     std::vector<std::string> input;
-    get_input_p1("C:/projects/cpp-advent-of-code/src/2023/day1/input.txt",input);
+    get_input_p1(FileSystem::getPath("src/2023/day1/input.txt"),input);
     std::cout << "Part 1 : " << p1_solve(input) << std::endl;
     input.clear();
-    get_input_p2("C:/projects/cpp-advent-of-code/src/2023/day1/input.txt",input);
+    get_input_p2(FileSystem::getPath("src/2023/day1/input.txt"),input);
     std::cout << "Part 2 : " << p2_solve(input) << std::endl;
 
     return 0;

@@ -3,6 +3,9 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include "filesystem.h"
+
+// problem link : https://adventofcode.com/2022/day/4
 
 void get_input(const std::string &path, std::vector<std::pair<std::string, std::string>> &input){
     std::fstream myfile(path);
@@ -27,7 +30,7 @@ int p2_solve(std::vector<std::pair<std::string, std::string>>& data){
 
 int main(){
     std::vector<std::pair<std::string, std::string>> input;
-    get_input("C:/projects/cpp-advent-of-code/src/2022/day4/input.txt", input);
+    get_input(FileSystem::getPath("src/2022/day4/input.txt"), input);
     std::cout << p1_solve(input) << std::endl;
     std::cout << p2_solve(input) << std::endl;
 }

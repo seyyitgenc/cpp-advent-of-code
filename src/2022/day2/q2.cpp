@@ -3,6 +3,7 @@
 #include <fstream>
 #include <sstream>
 #include <string>
+#include "filesystem.h"
 
 // problem link : https://adventofcode.com/2022/day/2
 
@@ -123,7 +124,7 @@ int p2_solve(std::vector<std::vector<std::string>> &data){
 
 int main(){
     std::vector<std::vector<std::string>> calories;
-    get_input("C:/projects/cpp-advent-of-code/src/2022/day2/input.txt", calories);
+    get_input(FileSystem::getPath("src/2022/day2/input.txt"), calories);
     std::cout << "Part 1 result : " << p1_solve(calories) << std::endl;
     std::cout << "Part 2 result : " << p2_solve(calories) << std::endl;
     return 0;
