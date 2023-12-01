@@ -9,7 +9,7 @@
 #include <cstdio>
 // problem link : https://adventofcode.com/2022/day/3 
 
-void get_input(std::string path,std::vector<std::string>& data){
+void get_input(const std::string &path,std::vector<std::string>& data){
     std::fstream myfile(path);
     std::string line;
     
@@ -22,7 +22,7 @@ void get_input(std::string path,std::vector<std::string>& data){
 int p1_solve(std::vector<std::string> &data){
     int result = 0;
     std::set<char> test;
-    std::
+
     for (auto &&string : data)
     {
         std::vector<int> mini_set1(52); // for first_half

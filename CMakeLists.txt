@@ -14,10 +14,16 @@ set(2022
     day1
     day2
     day3
+    day4
     )
 
 set(2023
+    day1
     )
+
+configure_file(configuration/root_directory.h.in ${CMAKE_SOURCE_DIR}/configuration/root_directory.h)
+include_directories(${CMAKE_BINARY_DIR}/configuration)
+include_directories(${CMAKE_SOURCE_DIR}/include)
 
 function(create_project_from_sources year question)
     file(GLOB SOURCE
